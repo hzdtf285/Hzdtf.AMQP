@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.AMQP.Contract.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.AMQP.Contract.Standard.Channel.IAmqpChannel">
+            <summary>
+            AMQP渠道接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Channel.IAmqpChannel.GetChannelCount">
+            <summary>
+            获取渠道数
+            </summary>
+            <returns>渠道数</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Channel.IAmqpChannel.CloseChannels(System.Int32)">
+            <summary>
+            关闭渠道集合
+            </summary>
+            <param name="topCount">前几个要关闭的，如果为-1则表示全部</param>
+        </member>
+        <member name="T:Hzdtf.AMQP.Contract.Standard.Config.IAmqpConfigReader">
+            <summary>
+            AMQP配置读取接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnection">
+            <summary>
+            AMQP连接接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnection.HostId">
+            <summary>
+            主机ID
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnection.OpenByHostId(System.String)">
+            <summary>
+            根据主机名打开
+            </summary>
+            <param name="hostId">主机ID</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnection.CreateProducer(System.String)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="exchange">交换机</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnection.CreateConsumer(System.String,System.String)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnection.CreateRpcClient(System.String,System.String)">
+            <summary>
+            创建Rpc客户端
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <returns>Rpc客户端</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnection.CreateRpcServer(System.String,System.String)">
+            <summary>
+            创建Rpc服务端
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <returns>Rpc服务端</returns>
+        </member>
+        <member name="T:Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnectionFactory">
+            <summary>
+            AMQP连接工厂接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="T:Hzdtf.AMQP.Contract.Standard.Core.IConsumer">
+            <summary>
+            消费者接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.AMQP.Contract.Standard.Core.IConsumer.BytesSerialization">
+            <summary>
+            字节数组序列化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Core.IConsumer.Subscribe(System.Func{System.String,System.Boolean},System.Boolean)">
+            <summary>
+            订阅消息
+            </summary>
+            <param name="receiveMessageFun">接收消息回调</param>
+            <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Core.IConsumer.Subscribe``1(System.Func{``0,System.Boolean},System.Boolean)">
+            <summary>
+            订阅消息
+            </summary>
+            <typeparam name="T">接收类型</typeparam>
+            <param name="receiveMessageFun">接收消息回调</param>
+            <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Core.IConsumer.Subscribe(System.Func{System.Byte[],System.Boolean},System.Boolean)">
+            <summary>
+            订阅消息
+            </summary>
+            <param name="receiveMessageFun">接收消息回调</param>
+            <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
+        </member>
+        <member name="T:Hzdtf.AMQP.Contract.Standard.Core.IProducer">
+            <summary>
+            生产者接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.AMQP.Contract.Standard.Core.IProducer.BytesSerialization">
+            <summary>
+            字节数组序列化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Core.IProducer.Publish(System.String,System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="message">消息</param>
+            <param name="routingKey">路由键</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Core.IProducer.Publish(System.Object,System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="message">消息</param>
+            <param name="routingKey">路由键</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Core.IProducer.Publish(System.Byte[],System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="message">消息</param>
+            <param name="routingKey">路由键</param>
+        </member>
+    </members>
+</doc>

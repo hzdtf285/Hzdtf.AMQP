@@ -1,0 +1,17 @@
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Contract.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.xml
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.csproj.CopyComplete
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Impl.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Impl.Standard.pdb

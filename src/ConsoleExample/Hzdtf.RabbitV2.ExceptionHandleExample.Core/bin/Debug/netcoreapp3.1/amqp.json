@@ -1,0 +1,23 @@
+{
+  "amqp": [
+    {
+      "hostId": "exhost",
+      "connectionString": "host=localhost;user=exuser;password=123;virtualPath=v_business_exception",
+      "connectionEncrypt": false,
+      "exchanges": [
+        {
+          "name": "ExChange",
+          "persistent": true,
+          "type": "direct", 
+          "queues": [
+            {
+              "name": "ExQueue",
+              "routingKeys": [ "ExQueueKey" ],
+              "qos": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

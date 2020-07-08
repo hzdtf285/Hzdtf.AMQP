@@ -1,0 +1,84 @@
+{
+  "amqp": [
+    {
+      "hostId": "host1",
+      "connectionString": "host=localhost;user=guest;password=123",
+      "connectionEncrypt": false,
+      "exchanges": [
+        {
+          "name": "TestExchange",
+          "persistent": true,
+          "type": "direct", // 直通
+          "queues": [
+            {
+              "name": "TestQueue1",
+              "routingKeys": [ "TestKey1", "TestKey1_A" ],
+              "qos": 4,
+              "exceptionHandle": { // 异常处理，当消费者服务业务处理异常时，需要处理的配置
+                "serviceName": "myService1", // 本消费者服务名
+                "publishConsumers": [ // 需要将异常信息发布到的消费者，可发布多个消费者
+                  {
+                    "hostId": "exhost",
+                    "exchange": "ExChange",
+                    "routingKey": "ExQueueKey"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "TestQueue2",
+              "routingKeys": [ "TestKey2", "TestKey1_A" ],
+              "qos": 4
+            },
+            {
+              "name": "TestQueue3",
+              "routingKeys": [ "TestKey3" ],
+              "qos": 4
+            }
+          ]
+        },
+        {
+          "name": "TestExchangeFaout",
+          "persistent": true,
+          "type": "fanout", // 广播
+          "queues": [
+            {
+              "name": "TestQueue1",
+              "routingKeys": [ "TestKey1", "TestKey1_A" ],
+              "qos": 4
+            },
+            {
+              "name": "TestQueue2",
+              "routingKeys": [ "TestKey2", "TestKey1_A" ],
+              "qos": 4
+            },
+            {
+              "name": "TestQueue3",
+              "routingKeys": [ "TestKey3" ],
+              "qos": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hostId": "exhost",
+      "connectionString": "host=localhost;user=exuser;password=123;virtualPath=v_business_exception",
+      "connectionEncrypt": false,
+      "exchanges": [
+        {
+          "name": "ExChange",
+          "persistent": true,
+          "type": "direct", // 直通
+          "queues": [
+            {
+              "name": "ExQueue",
+              "routingKeys": [ "ExQueueKey" ],
+              "qos": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kfqksdBlJvgtqvqaZeDDMsCHeDBvHZscofmCN319hFXpCMvjv5Kg9p4H9DaC2cPwdZdvTZjx1ykJHOuHDAsKmQ==",
+  "success": true,
+  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Contract.Standard\\Hzdtf.RabbitV2.Contract.Standard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

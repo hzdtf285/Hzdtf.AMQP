@@ -1,0 +1,523 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.AMQP.Impl.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.AMQP.Impl.Standard.AmqpUtil">
+            <summary>
+            AMQP辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.AmqpUtil.GlobalConfigReader">
+            <summary>
+            全局配置读取，默认为AmqpConfigCache
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.AmqpUtil.GetConfigReader(Hzdtf.AMQP.Contract.Standard.Config.IAmqpConfigReader)">
+            <summary>
+            获取配置读取，如果传入为空，则取全局配置读取
+            </summary>
+            <param name="configReader">配置读取</param>
+            <returns>配置读取</returns>
+        </member>
+        <member name="T:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigCache">
+            <summary>
+            AMQP配置缓存
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigCache.protoAmqpConfigReader">
+            <summary>
+            原生AMQP配置读取
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigCache.configInfo">
+            <summary>
+            AMQP配置信息
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigCache.syncConfigInfo">
+            <summary>
+            同步配置信息
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigCache.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigCache.#ctor(Hzdtf.AMQP.Contract.Standard.Config.IAmqpConfigReader)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="protoAmqpConfigReader">原生AMQP配置读取</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigCache.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="T:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigJson">
+            <summary>
+            AMQP配置JSON文件
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigJson.configJsonFile">
+            <summary>
+            配置JSON文件
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigJson.#ctor">
+            <summary>
+            构造方法，默认读取amqp.json
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigJson.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="configJsonFile">配置JSON文件</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigJson.Reader">
+            <summary>
+            读取
+            </summary>
+            <returns>数据</returns>
+        </member>
+        <member name="T:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase">
+            <summary>
+            AMQP连接基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.hostId">
+            <summary>
+            主机ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.HostId">
+            <summary>
+            主机ID
+            </summary>
+        </member>
+        <member name="P:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.AmqpConfigReader">
+            <summary>
+            AMQP配置读取
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.connectionStringParse">
+            <summary>
+            连接字符串解析
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.symmetricalEncryption">
+            <summary>
+            加密
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.#ctor(Hzdtf.AMQP.Contract.Standard.Config.IAmqpConfigReader)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="amqpConfigReader">AMQP配置读取</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.#ctor(Hzdtf.AMQP.Contract.Standard.Config.IAmqpConfigReader,Hzdtf.Utility.Standard.Connection.IConnectionStringParse{Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo},Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="amqpConfigReader">AMQP配置读取</param>
+            <param name="connectionStringParse">l连接字符串解析</param>
+            <param name="symmetricalEncryption">加密</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.OpenByHostId(System.String)">
+            <summary>
+            根据主机ID打开
+            </summary>
+            <param name="hostId">主机ID</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.Open(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo)">
+            <summary>
+            打开
+            </summary>
+            <param name="connectionModel">连接模型</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.GetDefaultConnectionStringParse">
+            <summary>
+            获取默认的连接字符串解析器
+            </summary>
+            <returns>默认的连接字符串解析器</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.GetDefaultConnectionString">
+            <summary>
+            获取默认的连接字符串
+            </summary>
+            <returns>默认的连接字符串</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.ValidateOtherOpenParams(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo)">
+            <summary>
+            验证其他打开参数
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.GetDefaultPort">
+            <summary>
+            获取默认端口
+            </summary>
+            <returns>默认端口</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.SetDefaultConnectionInfo(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo)">
+            <summary>
+            设置默认连接信息
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.CreateProducer(System.String)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="exchange">交换机</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.CreateConsumer(System.String,System.String)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.CreateRpcClient(System.String,System.String)">
+            <summary>
+            创建Rpc客户端
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <returns>Rpc客户端</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.CreateRpcServer(System.String,System.String)">
+            <summary>
+            创建Rpc服务端
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <returns>Rpc服务端</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.GetExchanges">
+            <summary>
+            获取交换机数组
+            </summary>
+            <returns>交换机数组</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.GetExchange(System.String)">
+            <summary>
+            获取交换机
+            </summary>
+            <param name="exchangeName">交换名</param>
+            <returns>交换机</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.GetQueue(Hzdtf.AMQP.Model.Standard.Config.ExchangeInfo,System.String)">
+            <summary>
+            获取队列
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queueName">队列名</param>
+            <returns>队列</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.CreateProducer(Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="amqpQueue">AMQP队列</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.CreateConsumer(Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="amqpQueue">AMQP队列</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.CreateRpcClient(Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            创建Rpc客户端
+            </summary>
+            <param name="amqpQueue">AMQP队列</param>
+            <returns>Rpc客户端</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.CreateRpcServer(Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            创建Rpc服务端
+            </summary>
+            <param name="amqpQueue">AMQP队列</param>
+            <returns>Rpc服务端</returns>
+        </member>
+        <member name="T:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionFactoryBase">
+            <summary>
+            AMQP连接工厂基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionFactoryBase.#ctor(Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption,Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="symmetricalEncryption">加密</param>
+            <param name="appConfig">应用配置</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionFactoryBase.CreateAndOpen(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionWrapInfo)">
+            <summary>
+            创建并打开
+            </summary>
+            <param name="connectionWrap">连接包装信息</param>
+            <returns>连接</returns>
+        </member>
+        <member name="T:Hzdtf.AMQP.Impl.Standard.Connection.Connection.AmqpConnectionStringParse">
+            <summary>
+            AMQP连接字符串解析器
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.Connection.AmqpConnectionStringParse.SetOnlyHaveValue(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo,System.String,System.String)">
+            <summary>
+            设置独特的值
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+            <param name="name">名称</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.Connection.AmqpConnectionStringParse.SetDefaultValue(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo)">
+            <summary>
+            设置默认值
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.Connection.AmqpConnectionStringParse.ValidateOnlyHaveParams(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo)">
+            <summary>
+            验证独特的参数集合，如果不通过则抛出对应异常
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.Connection.AmqpConnectionStringParse.CreateConnectionInfo">
+            <summary>
+            创建连接信息
+            </summary>
+            <returns>连接信息</returns>
+        </member>
+        <member name="T:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionUtil">
+            <summary>
+            AMQP连接辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionUtil.DefaultConnectionStringParse">
+            <summary>
+            默认连接字符串解析
+            </summary>
+        </member>
+        <member name="T:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase">
+            <summary>
+            AMQP RPC 客户端方法基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.amqpConfigReader">
+            <summary>
+            AMQP配置读取
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.jsonSerialation">
+            <summary>
+            JSON字节流序列化
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.messagePackSerialztion">
+            <summary>
+            MessagePack字节流序列化
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.dicMapRpcClient">
+            <summary>
+            映射RPC客户端字典（key: RPC客户端标识, value：RPC客户端）
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.syncDicMapRpcClient">
+            <summary>
+            同步映射RPC客户端字典
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.connections">
+            <summary>
+            连接列表
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.syncConnections">
+            <summary>
+            同步连接列表
+            </summary>
+        </member>
+        <member name="F:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.connectionFactory">
+            <summary>
+            连接工厂
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.#ctor(Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnectionFactory)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="connectionFactory">连接工厂</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.#ctor(Hzdtf.AMQP.Contract.Standard.Config.IAmqpConfigReader,Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnectionFactory)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="amqpConfigReader">AMQP配置读取</param>
+            <param name="connectionFactory">连接工厂</param>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.Call(System.Reflection.MethodInfo,System.Object)">
+            <summary>
+            调用
+            </summary>
+            <param name="method">方法</param>
+            <param name="message">消息</param>
+            <returns>返回数据</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.Finalize">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.GetByteSerialization(System.String)">
+            <summary>
+            根据数据类型获取字节流序列化
+            </summary>
+            <param name="dataType">数据类型</param>
+            <returns>字节流序列化</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.GetRpcClientId(System.String,System.String)">
+            <summary>
+            获取RPC客户端标识
+            </summary>
+            <param name="exchange">交换机</param>
+            <param name="queue">队列</param>
+            <returns>RPC客户端标识</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcClientMethodBase.GetAvailableRpcClient(Hzdtf.AMQP.Model.Standard.Config.RpcClientAssemblyQueueInfo)">
+            <summary>
+            获取可用的RPC客户端
+            </summary>
+            <param name="rpcClientAssemblyQueue">RPC客户端程序集队列</param>
+            <returns>RPC客户端</returns>
+        </member>
+        <member name="T:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcDispatchProxyClient">
+            <summary>
+            AMQP RPC动态代理客户端
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcDispatchProxyClient.CreateRpcClientMethod">
+            <summary>
+            创建默认Rpc客户端方法
+            </summary>
+            <returns>Rpc客户端方法</returns>
+        </member>
+        <member name="T:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions">
+            <summary>
+            AMQP配置扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions.ToAmqpConnectionInfo(Hzdtf.AMQP.Model.Standard.Config.AmqpConfigInfo,System.String,Hzdtf.Utility.Standard.Connection.IConnectionStringParse{Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo},Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption)">
+            <summary>
+            转换为AMQP连接信息
+            </summary>
+            <param name="amqpConfig">AMQP配置信息</param>
+            <param name="hostId">主机ID</param>
+            <param name="connectionStringParse">连接字符串解析</param>
+            <param name="symmetricalEncryption">加密</param>
+            <returns>AMQP连接信息</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions.ToFristAmqpConnectionInfo(Hzdtf.AMQP.Model.Standard.Config.AmqpConfigInfo,Hzdtf.Utility.Standard.Connection.IConnectionStringParse{Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo},Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption)">
+            <summary>
+            默认取第1个转换为AMQP连接信息
+            </summary>
+            <param name="amqpConfig">AMQP配置信息</param>
+            <param name="connectionStringParse">连接字符串解析</param>
+            <param name="symmetricalEncryption">加密</param>
+            <returns>AMQP连接信息</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions.ToFristConnectionString(Hzdtf.AMQP.Model.Standard.Config.AmqpConfigInfo,Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption)">
+            <summary>
+            默认取第1个转换为连接字符串
+            </summary>
+            <param name="amqpConfig">AMQP配置信息</param>
+            <param name="symmetricalEncryption">加密</param>
+            <returns>连接字符串</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions.ToExchanges(Hzdtf.AMQP.Model.Standard.Config.AmqpConfigInfo,Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo,Hzdtf.Utility.Standard.Connection.IConnectionStringParse{Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo},Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption)">
+            <summary>
+            将AMQP连接转换为交换机信息数组
+            </summary>
+            <param name="amqpConfig">AMQP配置信息</param>
+            <param name="amqpConnection">AMQP连接</param>
+            <param name="connectionStringParse">连接字符串解析</param>
+            <param name="symmetricalEncryption">加密</param>
+            <returns>交换机信息数组</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions.ToExchanges(Hzdtf.AMQP.Model.Standard.Config.AmqpConfigInfo,Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo,System.String@,Hzdtf.Utility.Standard.Connection.IConnectionStringParse{Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo},Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption)">
+            <summary>
+            将AMQP连接转换为交换机信息数组
+            </summary>
+            <param name="amqpConfig">AMQP配置信息</param>
+            <param name="amqpConnection">AMQP连接</param>
+            <param name="hostId">主机ID</param>
+            <param name="connectionStringParse">连接字符串解析</param>
+            <param name="symmetricalEncryption">加密</param>
+            <returns>交换机信息数组</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions.ToHostId(Hzdtf.AMQP.Model.Standard.Config.AmqpConfigInfo,Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo,Hzdtf.Utility.Standard.Connection.IConnectionStringParse{Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo},Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption)">
+            <summary>
+            将AMQP连接转换为主机ID
+            </summary>
+            <param name="amqpConfig">AMQP配置信息</param>
+            <param name="amqpConnection">AMQP连接</param>
+            <param name="connectionStringParse">连接字符串解析</param>
+            <param name="symmetricalEncryption">加密</param>
+            <returns>主机ID</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions.ToExchanges(Hzdtf.AMQP.Model.Standard.Config.AmqpConfigInfo,System.String)">
+            <summary>
+            将主机ID转换为交换机信息数组
+            </summary>
+            <param name="amqpConfig">AMQP配置信息</param>
+            <param name="hostId">主机ID</param>
+            <returns>交换机信息数组</returns>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions.ToRpcClientAssemblyQueue(Hzdtf.AMQP.Model.Standard.Config.AmqpConfigInfo,System.String)">
+            <summary>
+            将RPC客户端程序集转换为RPC客户端程序集队列信息
+            </summary>
+            <param name="amqpConfig">AMQP配置信息</param>
+            <param name="rpcClientAssembly">RPC客户端程序集</param>
+            <returns>RPC客户端程序集队列信息</returns>
+        </member>
+    </members>
+</doc>

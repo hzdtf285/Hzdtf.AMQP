@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="amqp.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="amqp.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Consul" Version="1.6.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.5" />
+    <PackageReference Include="Winton.Extensions.Configuration.Consul" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Rabbit\Hzdtf.RabbitV2.AspNet.Core\Hzdtf.RabbitV2.AspNet.Core.csproj" />
+    <ProjectReference Include="..\..\Rabbit\Hzdtf.RabbitV2.Consul.AspNet.Core\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Hzdtf.Consul.ConfigCenter.AspNet.Core">
+      <HintPath>..\..\Library\Hzdtf.Consul.ConfigCenter.AspNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzdtf.Consul.Extensions.AspNet.Core">
+      <HintPath>..\..\Library\Hzdtf.Consul.Extensions.AspNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzdtf.Consul.Extensions.Common.Standard">
+      <HintPath>..\..\Library\Hzdtf.Consul.Extensions.Common.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzdtf.Logger.Contract.Standard">
+      <HintPath>..\..\Library\Hzdtf.Logger.Contract.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzdtf.Platform.Contract.Standard">
+      <HintPath>..\..\Library\Hzdtf.Platform.Contract.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzdtf.Platform.Impl.Core">
+      <HintPath>..\..\Library\Hzdtf.Platform.Impl.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzdtf.Utility.Standard">
+      <HintPath>..\..\Library\Hzdtf.Utility.Standard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

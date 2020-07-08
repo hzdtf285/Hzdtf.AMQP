@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.RabbitV2.AspNet.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionFactoryOptions">
+            <summary>
+            Rabbit连接工厂配置选项
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionFactoryOptions.SymmetricalEncryption">
+            <summary>
+            加密
+            </summary>
+        </member>
+        <member name="P:Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionFactoryOptions.AppConfig">
+            <summary>
+            配置
+            </summary>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionFactoryCustomerOptions">
+            <summary>
+            Rabbit连接工厂自定义选项配置
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionFactoryCustomerOptions.ConfigReader">
+            <summary>
+            配置读取
+            </summary>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionOpenOptions">
+            <summary>
+            Rabbit连接打开配置选项
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionOpenOptions.HostId">
+            <summary>
+            主机ID
+            </summary>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionOpenCustomerOptions">
+            <summary>
+            Rabbit连接打开自定义配置选项
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionOpenCustomerOptions.ConfigReader">
+            <summary>
+            配置读取
+            </summary>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.AspNet.Core.RabbitExtensions">
+            <summary>
+            Rabbit扩展类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.AspNet.Core.RabbitExtensions.AddRabbitConnectionFactory(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionFactoryOptions})">
+            <summary>
+            添加Rabbit连接工厂
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="options">配置回调</param>
+            <returns>AMQP连接工厂</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.AspNet.Core.RabbitExtensions.AddRabbitConnectionFactoryForConfigurate(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionFactoryOptions},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
+            <summary>
+            为微软配置添加Rabbit连接工厂
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="options">配置回调</param>
+            <param name="beforeConfigurationBuilder">配置生成前回调</param>
+            <returns>AMQP连接工厂</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.AspNet.Core.RabbitExtensions.AddCustomerRabbitConnectionFactory(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionFactoryCustomerOptions})">
+            <summary>
+            添加自定义Rabbit连接工厂
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="options">配置回调</param>
+            <returns>AMQP连接工厂</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.AspNet.Core.RabbitExtensions.AddRabbitConnectionAndOpen(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)">
+            <summary>
+            添加Rabbit连接并打开
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="hostId">主机ID</param>
+            <returns>AMQP连接</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.AspNet.Core.RabbitExtensions.AddRabbitConnectionAndOpenForConfigurate(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
+            <summary>
+            为微软配置添加Rabbit连接并打开
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="hostId">主机ID</param>
+            <param name="beforeConfigurationBuilder">配置生成前回调</param>
+            <returns>AMQP连接</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.AspNet.Core.RabbitExtensions.AddRabbitConnectionAndOpenForConfigurate(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionOpenOptions},System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Object})">
+            <summary>
+            为微软配置添加Rabbit连接并打开
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="options">配置回调</param>
+            <param name="beforeConfigurationBuilder">配置生成前回调</param>
+            <returns>AMQP连接</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.AspNet.Core.RabbitExtensions.AddCustomerRabbitConnectionAndOpen(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Hzdtf.RabbitV2.AspNet.Core.RabbitConnectionOpenCustomerOptions})">
+            <summary>
+            添加自定义Rabbit连接并打开
+            </summary>
+            <param name="services">服务收藏</param>
+            <param name="options">配置回调</param>
+            <returns>AMQP连接</returns>
+        </member>
+    </members>
+</doc>

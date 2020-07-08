@@ -1,0 +1,13 @@
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.xml
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.csproj.CopyComplete
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.pdb

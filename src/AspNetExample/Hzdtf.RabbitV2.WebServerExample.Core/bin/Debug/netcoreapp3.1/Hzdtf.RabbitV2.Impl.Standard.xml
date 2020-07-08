@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hzdtf.RabbitV2.Impl.Standard</name>
+    </assembly>
+    <members>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection">
+            <summary>
+            Rabbit连接
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.connection">
+            <summary>
+            连接
+            </summary>
+        </member>
+        <member name="P:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.channels">
+            <summary>
+            渠道列表
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.#ctor(Hzdtf.AMQP.Contract.Standard.Config.IAmqpConfigReader,Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="amqpConfigReader">AMQP配置读取</param>
+            <param name="symmetricalEncryption">加密</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.ExecOpen(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo)">
+            <summary>
+            执行打开
+            </summary>
+            <param name="connectionModel">连接模型</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.ExecClose">
+            <summary>
+            执行关闭
+            </summary>
+            <returns>事件数据</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.GetDefaultPort">
+            <summary>
+            获取默认端口
+            </summary>
+            <returns>默认端口</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.GetConnectionFactory(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo)">
+            <summary>
+            根据连接信息获取连接工厂
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+            <returns>连接工厂</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.CreateChannel">
+            <summary>
+            创建渠道并添加到渠道列表里
+            </summary>
+            <returns>渠道</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.AddClosedEventHandler(Hzdtf.Utility.Standard.Release.ICloseable)">
+            <summary>
+            为渠道添加关闭后事件处理
+            </summary>
+            <param name="channel">渠道</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.Channel_Closed(System.Object,Hzdtf.Utility.Standard.Data.DataEventArgs)">
+            <summary>
+            渠道关闭后
+            </summary>
+            <param name="o">引发对象</param>
+            <param name="e">对象事件参数</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.CloseChannels(System.Int32)">
+            <summary>
+            关闭渠道集合
+            </summary>
+            <param name="topCount">前几个要关闭的，如果为-1则表示全部</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.GetChannelCount">
+            <summary>
+            获取渠道数
+            </summary>
+            <returns>渠道数</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.CreateProducer(Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            创建生产者
+            </summary>
+            <param name="amqpQueue">AMQP队列</param>
+            <returns>生产者</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.CreateConsumer(Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            创建消费者
+            </summary>
+            <param name="amqpQueue">AMQP队列</param>
+            <returns>消费者</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.CreateRpcClient(Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            创建Rpc客户端
+            </summary>
+            <param name="amqpQueue">AMQP队列</param>
+            <returns>Rpc客户端</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.CreateRpcServer(Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            创建Rpc服务端
+            </summary>
+            <param name="amqpQueue">AMQP队列</param>
+            <returns>Rpc服务端</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnection.Finalize">
+            <summary>
+            析构方法
+            </summary>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnectionFactory">
+            <summary>
+            Rabbit连接工厂
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnectionFactory.amqpConfigReader">
+            <summary>
+            AMQP配置读取
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnectionFactory.#ctor(Hzdtf.Utility.Standard.Safety.ISymmetricalEncryption,Hzdtf.Platform.Config.Contract.Standard.Config.App.IAppConfiguration,Hzdtf.AMQP.Contract.Standard.Config.IAmqpConfigReader)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="symmetricalEncryption">加密</param>
+            <param name="appConfig">应用配置</param>
+            <param name="amqpConfigReader">配置读取</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnectionFactory.Create">
+            <summary>
+            创建
+            </summary>
+            <returns>连接</returns>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnectionStringParse">
+            <summary>
+            Rabbit连接字符串解析
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnectionStringParse.SetDefaultValue(Hzdtf.AMQP.Model.Standard.Connection.AmqpConnectionInfo)">
+            <summary>
+            设置默认值
+            </summary>
+            <param name="connectionInfo">连接信息</param>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnectionUtil">
+            <summary>
+            Rabbit连接辅助类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitConnectionUtil.DEFAULT_PORT">
+            <summary>
+            默认端口
+            </summary>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitRpcClientMethod">
+            <summary>
+            Rabbit RPC客户端方法
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitRpcClientMethod.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Connection.RabbitRpcClientMethod.#ctor(Hzdtf.AMQP.Contract.Standard.Config.IAmqpConfigReader,Hzdtf.AMQP.Contract.Standard.Connection.IAmqpConnectionFactory)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="amqpConfigReader">AMQP配置读取</param>
+            <param name="connectionFactory">连接工厂</param>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer">
+            <summary>
+            Rabbit消费者
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.BytesSerialization">
+            <summary>
+            字节数组序列化，默认为JSON序列化
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.exceptionHandleConnections">
+            <summary>
+            异常处理连接数组
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.dicExceptionHandleProducers">
+            <summary>
+            异常处理生产者字典；key：生产者，value：路由键
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            只初始化交换机与基本属性，队列定义请重写Init方法进行操作
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="amqpQueue">AMQP队列信息</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.Subscribe(System.Func{System.String,System.Boolean},System.Boolean)">
+            <summary>
+            订阅消息
+            </summary>
+            <param name="receiveMessageFun">接收消息回调</param>
+            <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.Subscribe``1(System.Func{``0,System.Boolean},System.Boolean)">
+            <summary>
+            订阅消息
+            </summary>
+            <typeparam name="T">接收类型</typeparam>
+            <param name="receiveMessageFun">接收消息回调</param>
+            <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.Subscribe(System.Func{System.Byte[],System.Boolean},System.Boolean)">
+            <summary>
+            订阅消息
+            </summary>
+            <param name="receiveMessageFun">接收消息回调</param>
+            <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.PublishExceptionQueue(System.Exception,System.Object,System.String)">
+            <summary>
+            推送异常队列
+            </summary>
+            <param name="ex">异常</param>
+            <param name="queueMessage">队列消息</param>
+            <param name="desc">描述</param>
+            <returns>是否推送成功</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.InitExceptionHandle">
+            <summary>
+            初始化异常处理
+            </summary>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase">
+            <summary>
+            Rabbit核心基类
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.channel">
+            <summary>
+            渠道
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.amqpQueue">
+            <summary>
+            AMQP队列信息
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.basicProperties">
+            <summary>
+            基本属性集合
+            </summary>
+        </member>
+        <member name="P:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.Log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="E:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.Closed">
+            <summary>
+            关闭后事件
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo,System.Boolean)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            只初始化交换机与基本属性，队列定义请重写Init方法进行操作
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="amqpQueue">AMQP队列信息</param>
+            <param name="isDeclare">是否定义</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.OnClosed(System.Object)">
+            <summary>
+            执行关闭事件
+            </summary>
+            <param name="data">数据</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.Finalize">
+            <summary>
+            析构方法
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.GetLogTitleMsg">
+            <summary>
+            获取日志标题消息
+            </summary>
+            <returns>日志标题消息</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.GetLogTags">
+            <summary>
+            获取日志标签集合
+            </summary>
+            <returns>日志标签集合</returns>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer">
+            <summary>
+            Rabbit生产者
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="P:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer.BytesSerialization">
+            <summary>
+            字节数组序列化，默认为JSON序列化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            只初始化交换机与基本属性，队列定义请重写Init方法进行操作
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="amqpQueue">AMQP队列信息</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer.Publish(System.String,System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="message">消息</param>
+            <param name="routingKey">路由键</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer.Publish(System.Object,System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="message">消息</param>
+            <param name="routingKey">路由键</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer.Publish(System.Byte[],System.String)">
+            <summary>
+            发布消息
+            </summary>
+            <param name="message">消息</param>
+            <param name="routingKey">路由键</param>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient">
+            <summary>
+            Rabbit RPC客户端
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.replyQueueName">
+            <summary>
+            回复队列名
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.consumer">
+            <summary>
+            回复消费者
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.callbackMapper">
+            <summary>
+            回调映射
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            只初始化交换机与基本属性，队列定义请重写Init方法进行操作
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="amqpQueue">AMQP队列信息</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.Call(System.Byte[])">
+            <summary>
+            调用
+            </summary>
+            <param name="message">消息</param>
+            <returns>返回字节流</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.CallAsync(System.Byte[])">
+            <summary>
+            异步调用
+            </summary>
+            <param name="message">消息</param>
+            <returns>返回字节流任务</returns>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcDispatchProxyClient">
+            <summary>
+            Rabbit RPC动态代理客户端
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcDispatchProxyClient.CreateRpcClientMethod">
+            <summary>
+            创建默认Rpc客户端方法
+            </summary>
+            <returns>Rpc客户端方法</returns>
+        </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer">
+            <summary>
+            Rabbit RPC服务端
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.exceptionHandleConnections">
+            <summary>
+            异常处理连接数组
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.dicExceptionHandleProducers">
+            <summary>
+            异常处理生产者字典；key：生产者，value：路由键
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+            <summary>
+            构造方法
+            初始化各个对象以便就绪
+            只初始化交换机与基本属性，队列定义请重写Init方法进行操作
+            </summary>
+            <param name="channel">渠道</param>
+            <param name="amqpQueue">AMQP队列信息</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.Receive(System.Func{System.Byte[],System.Byte[]})">
+            <summary>
+            接收消息
+            </summary>
+            <param name="receiveMessageFun">接收消息回调</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.PublishExceptionQueue(System.Exception,System.Object,System.String)">
+            <summary>
+            推送异常队列
+            </summary>
+            <param name="ex">异常</param>
+            <param name="queueMessage">队列消息</param>
+            <param name="desc">描述</param>
+            <returns>是否推送成功</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.InitExceptionHandle">
+            <summary>
+            初始化异常处理
+            </summary>
+        </member>
+    </members>
+</doc>

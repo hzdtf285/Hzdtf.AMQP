@@ -1,0 +1,14 @@
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.deps.json
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Utility.Standard.xml
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.AssemblyInfoInputs.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.AssemblyInfo.cs
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.csproj.CopyComplete
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.xml
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.csprojAssemblyReference.cache

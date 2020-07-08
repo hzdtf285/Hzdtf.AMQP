@@ -1,0 +1,51 @@
+{
+  "amqp": [
+    {
+      "hostId": "host1",
+      "connectionString": "NThIqSHMQ1X4gZqG0iZ4U/8sN3AxqwiCfRbRuHvjYvJARVY4Oo60Zg==",
+      "connectionEncrypt": true,
+      "exchanges": [
+        {
+          "name": "RpcExchange",
+          "persistent": true,
+          "type": "direct", // 直通
+          "queues": [
+            {
+              "name": "RpcQueue",
+              "qos": 4,
+              "exceptionHandle": { // 异常处理，当消费者服务业务处理异常时，需要处理的配置
+                "serviceName": "RpcServer1", // 本消费者服务名
+                "publishConsumers": [ // 需要将异常信息发布到的消费者，可发布多个消费者
+                  {
+                    "hostId": "exhost",
+                    "exchange": "ExChange",
+                    "routingKey": "ExQueueKey"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hostId": "exhost",
+      "connectionString": "host=localhost;user=exuser;password=123;virtualPath=v_business_exception",
+      "connectionEncrypt": false,
+      "exchanges": [
+        {
+          "name": "ExChange",
+          "persistent": true,
+          "type": "direct", // 直通
+          "queues": [
+            {
+              "name": "ExQueue",
+              "routingKeys": [ "ExQueueKey" ],
+              "qos": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
