@@ -1,4 +1,4 @@
-# Hzdtf.Consul.AMQP
+# Hzdtf.AMQP
 基于AMQP协议作为接口层，以RabbitMQ作为封装对象，通过amqp.json统一配置，使用者更方便，语言：C#。主要功能有：消费，生产，RPC通讯，业务处理异常自动发生异常队列，与consul配置中心集成，使amqp.json可动态更改配置。
 
 本框架.NET Core 3.1.5 以上。下载源码用Visual Studio 2019打开。
