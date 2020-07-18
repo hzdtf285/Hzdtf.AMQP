@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KdsG6Qb0bOeYuLpohNgHWYZLbgj/+dGBYrV+8z42NF9+WXwBZesvFkhL/yPDdcR3yw45HWqzor06XBYy+/KK6A==",
+  "dgSpecHash": "6oxrGu/H2XU8YXEThY4tLI86fdkTKCgLnsAp0oG3ahJ1vGbf4xhMNlloJHlIae26A23/RQUxABN8r0znqHrdmQ==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\ConsoleExample\\Hzdtf.RabbitV2.Consumer.ConsoleExample.Core\\Hzdtf.RabbitV2.Consumer.ConsoleExample.Core.csproj",
   "expectedPackageFiles": [
