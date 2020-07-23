@@ -80,7 +80,7 @@ namespace Hzdtf.AMQP.Impl.Standard.Connection
         /// 构造方法
         /// </summary>
         /// <param name="amqpConfigReader">AMQP配置读取</param>
-        /// <param name="connectionStringParse">l连接字符串解析</param>
+        /// <param name="connectionStringParse">连接字符串解析</param>
         /// <param name="symmetricalEncryption">加密</param>
         public AmqpConnectionBase(IAmqpConfigReader amqpConfigReader, IConnectionStringParse<AmqpConnectionInfo> connectionStringParse, ISymmetricalEncryption symmetricalEncryption)
         {

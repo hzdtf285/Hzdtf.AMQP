@@ -135,7 +135,7 @@
             构造方法
             </summary>
             <param name="amqpConfigReader">AMQP配置读取</param>
-            <param name="connectionStringParse">l连接字符串解析</param>
+            <param name="connectionStringParse">连接字符串解析</param>
             <param name="symmetricalEncryption">加密</param>
         </member>
         <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpConnectionBase.OpenByHostId(System.String)">
@@ -426,18 +426,6 @@
             </summary>
             <param name="rpcClientAssemblyQueue">RPC客户端程序集队列</param>
             <returns>RPC客户端</returns>
-        </member>
-        <member name="T:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcDispatchProxyClient">
-            <summary>
-            AMQP RPC动态代理客户端
-            @ 黄振东
-            </summary>
-        </member>
-        <member name="M:Hzdtf.AMQP.Impl.Standard.Connection.AmqpRpcDispatchProxyClient.CreateRpcClientMethod">
-            <summary>
-            创建默认Rpc客户端方法
-            </summary>
-            <returns>Rpc客户端方法</returns>
         </member>
         <member name="T:Hzdtf.AMQP.Contract.Standard.Config.AmqpConfigExtensions">
             <summary>
