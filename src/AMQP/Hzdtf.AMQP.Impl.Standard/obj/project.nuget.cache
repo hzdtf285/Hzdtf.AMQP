@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rsdR9qXJo6+bX5wTJoCyKBWFxahPmVjVtZz0AKkD6hHQ306CgxWuJA2qBh9wIghjsaadGLXcxhrUrHOre+OojQ==",
+  "dgSpecHash": "RK85XgJeq+t43j470G9+g2uiP2OG9Fwi8guyHMjnK49NRAEQdvt+lTQBlpTyrHpfT2r8U8KdK0JC5HFAU7vnLg==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj",
   "expectedPackageFiles": [
