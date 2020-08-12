@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4+A6cqBcZtpIKa+idqp4fULbWaCoDGQiIUlzdeS/ldVWuvXrJYcnIMIx7nKZn5qKHL4DIHY+72AKI2WdMxQSBw==",
+  "dgSpecHash": "5uemEgmYr6VIolry2m4DXHWAYqwQh8xVxxMSMYcBZGwhE+LrnVEfQMfllmEcAYo1YHIpYnctfyjrQ+CMNLbh6Q==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\RpcExample\\BusinessDemo\\Hzdtf.BusinessDemo.Impl.Standard\\Hzdtf.BusinessDemo.Impl.Standard.csproj",
   "expectedPackageFiles": [

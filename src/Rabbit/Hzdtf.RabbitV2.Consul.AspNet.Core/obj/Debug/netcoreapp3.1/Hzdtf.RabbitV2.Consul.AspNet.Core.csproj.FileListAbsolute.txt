@@ -52,3 +52,5 @@ C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Consul.AspNet.Core\ob
 C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Consul.AspNet.Core\obj\Debug\netcoreapp3.1\staticwebassets\Hzdtf.RabbitV2.Consul.AspNet.Core.StaticWebAssets.xml
 C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Consul.AspNet.Core\obj\Debug\netcoreapp3.1\Hzdtf.RabbitV2.Consul.AspNet.Core.dll
 C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Consul.AspNet.Core\obj\Debug\netcoreapp3.1\Hzdtf.RabbitV2.Consul.AspNet.Core.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Consul.AspNet.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Consul.AspNet.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

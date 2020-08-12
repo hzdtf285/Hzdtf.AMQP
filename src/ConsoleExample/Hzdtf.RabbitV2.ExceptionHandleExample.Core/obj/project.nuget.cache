@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yof6b9Umu8KN10H9aPkljTZK/h1QVygyMHP/9x3VpGLBXZKr66mY1te2uuLwwhTwZ8AqRxI5zQIbaBdzYHrCSw==",
+  "dgSpecHash": "s30yz7PdCHijBbSn4db3BN1VlIvHHZXhcxkoOmnc8Amjln2dbeX2mfvzEEPJIv57mIdSmkxQnpgpmZUJFnTq2Q==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\ConsoleExample\\Hzdtf.RabbitV2.ExceptionHandleExample.Core\\Hzdtf.RabbitV2.ExceptionHandleExample.Core.csproj",
   "expectedPackageFiles": [

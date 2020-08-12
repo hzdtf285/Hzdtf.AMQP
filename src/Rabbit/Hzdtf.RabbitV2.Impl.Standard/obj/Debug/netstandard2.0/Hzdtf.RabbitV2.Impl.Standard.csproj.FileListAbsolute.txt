@@ -27,3 +27,5 @@ C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Impl.Standard\bin\Deb
 C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.AMQP.Impl.Standard.xml
 C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.AMQP.Contract.Standard.xml
 C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.xml
+C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.Impl.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

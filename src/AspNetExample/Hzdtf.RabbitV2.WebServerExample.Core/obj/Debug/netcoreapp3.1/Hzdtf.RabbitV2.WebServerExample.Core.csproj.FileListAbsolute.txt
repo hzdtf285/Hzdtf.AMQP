@@ -75,3 +75,5 @@ C:\AndyData\MyProject\Hzdtf.AMQP\src\AspNetExample\Hzdtf.RabbitV2.WebServerExamp
 C:\AndyData\MyProject\Hzdtf.AMQP\src\AspNetExample\Hzdtf.RabbitV2.WebServerExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.RabbitV2.Consul.AspNet.Core.pdb
 C:\AndyData\MyProject\Hzdtf.AMQP\src\AspNetExample\Hzdtf.RabbitV2.WebServerExample.Core\obj\Debug\netcoreapp3.1\Hzdtf.RabbitV2.WebServerExample.Core.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.AMQP\src\AspNetExample\Hzdtf.RabbitV2.WebServerExample.Core\obj\Debug\netcoreapp3.1\Hzdtf.RabbitV2.WebServerExample.Core.MvcApplicationPartsAssemblyInfo.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AspNetExample\Hzdtf.RabbitV2.WebServerExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AspNetExample\Hzdtf.RabbitV2.WebServerExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

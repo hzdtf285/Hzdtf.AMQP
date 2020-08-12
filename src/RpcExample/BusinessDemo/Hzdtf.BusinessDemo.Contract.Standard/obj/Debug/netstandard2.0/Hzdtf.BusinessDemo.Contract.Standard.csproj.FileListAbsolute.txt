@@ -13,3 +13,5 @@ C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.
 C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Contract.Standard.csproj.CopyComplete
 C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Contract.Standard.dll
 C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Contract.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Contract.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Contract.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

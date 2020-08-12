@@ -50,3 +50,5 @@ C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\Hzdtf.RabbitV2.RpcClientExample.
 C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\Hzdtf.RabbitV2.RpcClientExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.AMQP.Contract.Standard.xml
 C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\Hzdtf.RabbitV2.RpcClientExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.AMQP.Impl.Standard.xml
 C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\Hzdtf.RabbitV2.RpcClientExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.AMQP.Model.Standard.xml
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\Hzdtf.RabbitV2.RpcClientExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\Hzdtf.RabbitV2.RpcClientExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

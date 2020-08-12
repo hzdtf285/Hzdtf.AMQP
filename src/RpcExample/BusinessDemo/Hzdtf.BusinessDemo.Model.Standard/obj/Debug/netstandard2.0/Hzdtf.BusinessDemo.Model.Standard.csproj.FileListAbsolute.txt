@@ -11,3 +11,5 @@ C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.
 C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.dll
 C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.BusinessDemo.Model.Standard.pdb
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\RpcExample\BusinessDemo\Hzdtf.BusinessDemo.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

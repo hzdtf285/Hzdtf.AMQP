@@ -38,3 +38,5 @@ C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.AspNet.Core\bin\Debug
 C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.AspNet.Core\bin\Debug\netcoreapp3.1\Hzdtf.Utility.AspNet.Core.pdb
 C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.AspNet.Core\bin\Debug\netcoreapp3.1\Hzdtf.Utility.AspNet.Core.xml
 C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.AspNet.Core\obj\Debug\netcoreapp3.1\Hzdtf.RabbitV2.AspNet.Core.csproj.CoreCompileInputs.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.AspNet.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\Rabbit\Hzdtf.RabbitV2.AspNet.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb

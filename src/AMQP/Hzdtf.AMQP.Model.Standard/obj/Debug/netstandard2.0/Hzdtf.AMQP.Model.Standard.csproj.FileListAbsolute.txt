@@ -12,3 +12,5 @@ C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\ne
 C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.csproj.CoreCompileInputs.cache
 C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.xml
 C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\obj\Debug\netstandard2.0\Hzdtf.AMQP.Model.Standard.csprojAssemblyReference.cache
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\AMQP\Hzdtf.AMQP.Model.Standard\bin\Debug\netstandard2.0\Hzdtf.Mini.Standard.pdb

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tsyBzHaCj11Vo/XTMiBquHg8HnQ4f1KtQCTZF3zvKN1aeT1Iher5B66tHI2N5ei5dqceTgQKI7sWTWg4TaTtxA==",
+  "dgSpecHash": "rM5ZW5+MbwpEiSsTyERFM1xTj+Gm2R+kYuddFStidusx35i4u6SzM5NOG/FW1pCmFzhdQ608h6HP51H7LhK0jw==",
   "success": true,
   "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\Hzdtf.RabbitV2.WebClientExample.Core.csproj",
   "expectedPackageFiles": [

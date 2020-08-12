@@ -41,3 +41,5 @@ C:\AndyData\MyProject\Hzdtf.AMQP\src\ConsoleExample\Hzdtf.RabbitV2.ExceptionHand
 C:\AndyData\MyProject\Hzdtf.AMQP\src\ConsoleExample\Hzdtf.RabbitV2.ExceptionHandleExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.AMQP.Contract.Standard.xml
 C:\AndyData\MyProject\Hzdtf.AMQP\src\ConsoleExample\Hzdtf.RabbitV2.ExceptionHandleExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.AMQP.Impl.Standard.xml
 C:\AndyData\MyProject\Hzdtf.AMQP\src\ConsoleExample\Hzdtf.RabbitV2.ExceptionHandleExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.AMQP.Model.Standard.xml
+C:\AndyData\MyProject\Hzdtf.AMQP\src\ConsoleExample\Hzdtf.RabbitV2.ExceptionHandleExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.dll
+C:\AndyData\MyProject\Hzdtf.AMQP\src\ConsoleExample\Hzdtf.RabbitV2.ExceptionHandleExample.Core\bin\Debug\netcoreapp3.1\Hzdtf.Mini.Standard.pdb
