@@ -22,6 +22,17 @@
             <param name="configReader">配置读取</param>
             <returns>配置读取</returns>
         </member>
+        <member name="M:Hzdtf.AMQP.Impl.Standard.AmqpUtil.BuilderBusinessException(System.Exception,System.Object,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo,Hzdtf.Logger.Contract.Standard.ILogable,System.String)">
+            <summary>
+            生成业务异常信息
+            </summary>
+            <param name="ex">异常</param>
+            <param name="queueMessage">队列消息</param>
+            <param name="amqpQueue">AMQP队列信息</param>
+            <param name="log">日志</param>
+            <param name="desc">描述</param>
+            <returns>业务异常信息</returns>
+        </member>
         <member name="T:Hzdtf.AMQP.Impl.Standard.Config.AmqpConfigCache">
             <summary>
             AMQP配置缓存

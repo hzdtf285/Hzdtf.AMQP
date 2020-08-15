@@ -115,6 +115,19 @@
             <param name="receiveMessageFun">接收消息回调</param>
             <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
         </member>
+        <member name="T:Hzdtf.AMQP.Contract.Standard.Core.IExceptionHandle">
+            <summary>
+            异常处理接口
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="M:Hzdtf.AMQP.Contract.Standard.Core.IExceptionHandle.Handle(Hzdtf.AMQP.Model.Standard.BusinessException.BusinessExceptionInfo)">
+            <summary>
+            处理业务异常
+            </summary>
+            <param name="businessException">业务异常</param>
+            <returns>是否处理成功</returns>
+        </member>
         <member name="T:Hzdtf.AMQP.Contract.Standard.Core.IProducer">
             <summary>
             生产者接口

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using RabbitMQ.Client;
 using Hzdtf.AMQP.Model.Standard.Config;
+using Hzdtf.Logger.Contract.Standard;
 
 namespace Hzdtf.RabbitV2.Impl.Standard.Core
 {
@@ -37,8 +38,9 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
         /// </summary>
         /// <param name="channel">渠道</param>
         /// <param name="amqpQueue">AMQP队列信息</param>
-        public RabbitProducer(IModel channel, AmqpQueueInfo amqpQueue)
-            : base(channel, amqpQueue, false)
+        /// <param name="log">日志</param>
+        public RabbitProducer(IModel channel, AmqpQueueInfo amqpQueue, ILogable log = null)
+            : base(channel, amqpQueue, false, log)
         {
         }
 
@@ -89,7 +91,7 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
             }
 
             string logMsg = string.Format("给路由键:{0},交换机:{1} 发送消息", routingKey, amqpQueue.ExchangeName);
-            Log.DebugAsync(logMsg, null, typeof(RabbitProducer).Name, amqpQueue.ExchangeName, routingKey);
+            log.DebugAsync(logMsg, null, typeof(RabbitProducer).Name, amqpQueue.ExchangeName, routingKey);
 
             channel.BasicPublish(amqpQueue.ExchangeName, routingKey, basicProperties, message);
         }

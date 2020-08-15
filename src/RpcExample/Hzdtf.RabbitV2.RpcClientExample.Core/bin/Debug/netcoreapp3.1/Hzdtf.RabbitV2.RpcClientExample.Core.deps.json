@@ -13,6 +13,7 @@
           "Hzdtf.RabbitV2.Impl.Standard": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.5",
           "Hzdtf.Logger.Contract.Standard": "2.0.0.0",
+          "Hzdtf.Mini.Standard": "1.0.0.0",
           "Hzdtf.Platform.Contract.Standard": "2.0.0.0",
           "Hzdtf.Platform.Impl.Core": "3.1.5.0",
           "Hzdtf.Utility.Standard": "2.0.0.0"
@@ -174,6 +175,14 @@
           }
         }
       },
+      "Hzdtf.Mini.Standard/1.0.0.0": {
+        "runtime": {
+          "Hzdtf.Mini.Standard.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Hzdtf.Platform.Contract.Standard/2.0.0.0": {
         "runtime": {
           "Hzdtf.Platform.Contract.Standard.dll": {
@@ -195,14 +204,6 @@
           "Hzdtf.Utility.Standard.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
-          }
-        }
-      },
-      "Hzdtf.Mini.Standard/1.0.0.0": {
-        "runtime": {
-          "Hzdtf.Mini.Standard.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -347,6 +348,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Hzdtf.Mini.Standard/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Hzdtf.Platform.Contract.Standard/2.0.0.0": {
       "type": "reference",
       "serviceable": false,
@@ -358,11 +364,6 @@
       "sha512": ""
     },
     "Hzdtf.Utility.Standard/2.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Hzdtf.Mini.Standard/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

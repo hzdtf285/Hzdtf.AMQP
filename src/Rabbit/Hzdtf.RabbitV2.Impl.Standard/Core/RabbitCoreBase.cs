@@ -36,11 +36,7 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
         /// <summary>
         /// 日志
         /// </summary>
-        public ILogable Log
-        {
-            get;
-            set;
-        } = LogTool.DefaultLog;
+        protected readonly ILogable log;
 
         /// <summary>
         /// 关闭后事件
@@ -59,13 +55,23 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
         /// <param name="channel">渠道</param>
         /// <param name="amqpQueue">AMQP队列信息</param>
         /// <param name="isDeclare">是否定义</param>
-        public RabbitCoreBase(IModel channel, AmqpQueueInfo amqpQueue, bool isDeclare)
+        /// <param name="log">日志</param>
+        public RabbitCoreBase(IModel channel, AmqpQueueInfo amqpQueue, bool isDeclare, ILogable log = null)
         {
             ValidateUtil.ValidateNull(channel, "渠道");
             ValidateUtil.ValidateNull(amqpQueue, "AMQP队列信息");
 
             this.channel = channel;
             this.amqpQueue = amqpQueue;
+
+            if (log == null)
+            {
+                this.log = LogTool.DefaultLog;
+            }
+            else
+            {
+                this.log = log;
+            }
 
             if (isDeclare)
             {

@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.RabbitV2.WebServerExa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.AMQP.AspNet.Core", "AMQP\Hzdtf.AMQP.AspNet.Core\Hzdtf.AMQP.AspNet.Core.csproj", "{68BBB1F6-9C2F-45A4-BCD4-5063A0282EDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.RabbitV2.Consul.AspNet.Core", "Rabbit\Hzdtf.RabbitV2.Consul.AspNet.Core\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj", "{0C41AE1E-E5C3-45C3-AEA4-C944FAD9DE9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hzdtf.RabbitV2.Consul.AspNet.Core", "Rabbit\Hzdtf.RabbitV2.Consul.AspNet.Core\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj", "{0C41AE1E-E5C3-45C3-AEA4-C944FAD9DE9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hzdtf.RabbitV2.BusinessExceptionHandle.Core", "AspNetExample\Hzdtf.RabbitV2.BusinessExceptionHandle.Core\Hzdtf.RabbitV2.BusinessExceptionHandle.Core.csproj", "{53E63221-CFFB-41A4-91A6-B2AB0029E7AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{0C41AE1E-E5C3-45C3-AEA4-C944FAD9DE9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C41AE1E-E5C3-45C3-AEA4-C944FAD9DE9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C41AE1E-E5C3-45C3-AEA4-C944FAD9DE9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53E63221-CFFB-41A4-91A6-B2AB0029E7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53E63221-CFFB-41A4-91A6-B2AB0029E7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53E63221-CFFB-41A4-91A6-B2AB0029E7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53E63221-CFFB-41A4-91A6-B2AB0029E7AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,7 @@ Global
 		{62E91520-91F9-4825-AA8A-C5FE2273F349} = {341DCF6D-1CC9-470A-A4CC-F24ECF20CBC9}
 		{68BBB1F6-9C2F-45A4-BCD4-5063A0282EDD} = {72425E07-189C-4468-BD02-58F90EB7B12B}
 		{0C41AE1E-E5C3-45C3-AEA4-C944FAD9DE9E} = {48F5C5C8-F657-46B3-A862-057927B4E016}
+		{53E63221-CFFB-41A4-91A6-B2AB0029E7AB} = {341DCF6D-1CC9-470A-A4CC-F24ECF20CBC9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8F938DDB-5411-424A-AC08-E772DCC7ABBE}

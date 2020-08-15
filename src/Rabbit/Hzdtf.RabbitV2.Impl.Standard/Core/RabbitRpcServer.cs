@@ -1,5 +1,4 @@
 ﻿using Hzdtf.AMQP.Contract.Standard.Core;
-using Hzdtf.AMQP.Model.Standard.BusinessException;
 using Hzdtf.Utility.Standard.Utils;
 using System;
 using System.Collections.Generic;
@@ -7,12 +6,12 @@ using System.Text;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using Hzdtf.AMQP.Model.Standard.Config;
-using Hzdtf.AMQP.Contract.Standard.Connection;
-using Hzdtf.RabbitV2.Impl.Standard.Connection;
 using System.Linq;
 using Hzdtf.Utility.Standard.ProcessCall;
 using Hzdtf.Utility.Standard.Model.Return;
-using Hzdtf.Utility.Standard;
+using Hzdtf.Logger.Contract.Standard;
+using Hzdtf.Utility.Standard.Data;
+using Hzdtf.AMQP.Impl.Standard;
 
 namespace Hzdtf.RabbitV2.Impl.Standard.Core
 {
@@ -20,19 +19,30 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
     /// Rabbit RPC服务端
     /// @ 黄振东
     /// </summary>
-    public class RabbitRpcServer : RabbitCoreBase, IRpcServer
+    public class RabbitRpcServer : RabbitCoreBase, IRpcServer, ISetObject<IExceptionHandle>
     {
         #region 属性与字段
 
         /// <summary>
-        /// 异常处理连接数组
+        /// 异常处理
         /// </summary>
-        private IAmqpConnection[] exceptionHandleConnections;
+        private IExceptionHandle exceptionHandle;
 
         /// <summary>
-        /// 异常处理生产者字典；key：生产者，value：路由键
+        /// 异常处理
         /// </summary>
-        private IDictionary<IProducer, string> dicExceptionHandleProducers;
+        private IExceptionHandle ExceptionHandle
+        {
+            get
+            {
+                if (exceptionHandle == null)
+                {
+                    exceptionHandle = new RabbitExceptionHandle(amqpQueue, log);
+                }
+
+                return exceptionHandle;
+            }
+        }
 
         #endregion
 
@@ -45,9 +55,12 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
         /// </summary>
         /// <param name="channel">渠道</param>
         /// <param name="amqpQueue">AMQP队列信息</param>
-        public RabbitRpcServer(IModel channel, AmqpQueueInfo amqpQueue)
-            : base(channel, amqpQueue, true)
+        /// <param name="log">日志</param>
+        /// <param name="exceptionHandle">异常处理</param>
+        public RabbitRpcServer(IModel channel, AmqpQueueInfo amqpQueue, ILogable log = null, IExceptionHandle exceptionHandle = null)
+            : base(channel, amqpQueue, true, log)
         {
+            this.exceptionHandle = exceptionHandle;
         }
 
         #endregion
@@ -97,9 +110,10 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
                     }
                     catch (Exception ex)
                     {
-                        PublishExceptionQueue(ex, null);
+                        var busEx = AmqpUtil.BuilderBusinessException(ex, null, amqpQueue, log, ex.Message);
+                        ExceptionHandle.Handle(busEx);
 
-                        Log.ErrorAsync("RpcServer回调业务处理出现异常", ex, typeof(RabbitRpcServer).Name, correlationId);
+                        log.ErrorAsync("RpcServer回调业务处理出现异常", ex, typeof(RabbitRpcServer).Name, correlationId);
 
                         errorReturn = new BasicReturnInfo();
                         errorReturn.SetFailureMsg("业务处理出现异常", ex.Message);
@@ -109,7 +123,7 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
                 }
                 catch (Exception ex)
                 {
-                    Log.ErrorAsync("RpcServer接收消息处理出现异常", ex, typeof(RabbitRpcServer).Name, correlationId);
+                    log.ErrorAsync("RpcServer接收消息处理出现异常", ex, typeof(RabbitRpcServer).Name, correlationId);
 
                     errorReturn = new BasicReturnInfo();
                     errorReturn.SetFailureMsg("RpcServer接收消息处理出现异常", ex.Message);
@@ -125,121 +139,17 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
                     }
                 }
             };
-
-            InitExceptionHandle();
         }
 
         #endregion
 
-        #region 重写父类的方法
-
         /// <summary>
-        /// 关闭
+        /// 设置对象
         /// </summary>
-        public override void Close()
+        /// <param name="obj">对象</param>
+        public void Set(IExceptionHandle obj)
         {
-            base.Close();
-
-            if (!dicExceptionHandleProducers.IsNullOrCount0())
-            {
-                foreach (var item in dicExceptionHandleProducers)
-                {
-                    item.Key.Close();
-                }
-            }
-
-            if (!exceptionHandleConnections.IsNullOrLength0())
-            {
-                foreach (var item in exceptionHandleConnections)
-                {
-                    item.Close();
-                }
-            }
+            this.exceptionHandle = obj;
         }
-
-        #endregion
-
-        #region 私有方法
-
-        /// <summary>
-        /// 推送异常队列
-        /// </summary>
-        /// <param name="ex">异常</param>
-        /// <param name="queueMessage">队列消息</param>
-        /// <param name="desc">描述</param>
-        /// <returns>是否推送成功</returns>
-        protected bool PublishExceptionQueue(Exception ex, object queueMessage, string desc = null)
-        {
-            if (dicExceptionHandleProducers.IsNullOrCount0())
-            {
-                return false;
-            }
-
-            string queueMessageJson = null;
-            if (queueMessage != null)
-            {
-                try
-                {
-                    queueMessageJson = JsonUtil.SerializeIgnoreNull(queueMessage);
-                }
-                catch (Exception ex1)
-                {
-                    Log.ErrorAsync("JSON序列化业务异常信息出错", ex1, typeof(RabbitConsumer).Name, GetLogTags());
-                }
-            }
-
-            var busEx = new BusinessExceptionInfo()
-            {
-                Time = DateTime.Now,
-                ServiceName = string.IsNullOrWhiteSpace(amqpQueue.ExceptionHandle.ServiceName) ? UtilTool.AppServiceName : amqpQueue.ExceptionHandle.ServiceName,
-                ExceptionString = ex.ToString(),
-                ExceptionMessage = ex.Message,
-                Exchange = amqpQueue.ExchangeName,
-                Queue = amqpQueue.Queue.Name,
-                QueueMessageJsonString = queueMessageJson,
-                Desc = desc,
-                ServerMachineName = Environment.MachineName,
-                ServerIP = NetworkUtil.LocalIP
-            };
-
-            foreach (var item in dicExceptionHandleProducers)
-            {
-                item.Key.Publish(busEx, item.Value);
-            }
-
-            return true;
-        }
-
-        /// <summary>
-        /// 初始化异常处理
-        /// </summary>
-        private void InitExceptionHandle()
-        {
-            // 如果有定义异常处理
-            if (amqpQueue.ExceptionHandle == null || amqpQueue.ExceptionHandle.PublishConsumers.IsNullOrLength0())
-            {
-                return;
-            }
-
-            // 查找不重复的主机ID数组
-            var hostIds = amqpQueue.ExceptionHandle.PublishConsumers.Select(p => p.HostId).Distinct().ToArray();
-            exceptionHandleConnections = new RabbitConnection[hostIds.Length];
-            for (var i = 0; i < hostIds.Length; i++)
-            {
-                exceptionHandleConnections[i] = new RabbitConnection();
-                exceptionHandleConnections[i].OpenByHostId(hostIds[i]);
-            }
-
-            dicExceptionHandleProducers = new Dictionary<IProducer, string>(amqpQueue.ExceptionHandle.PublishConsumers.Length);
-            foreach (var pc in amqpQueue.ExceptionHandle.PublishConsumers)
-            {
-                var conn = exceptionHandleConnections.Where(p => p.HostId == pc.HostId).FirstOrDefault();
-                var producer = conn.CreateProducer(pc.Exchange);
-
-                dicExceptionHandleProducers.Add(producer, pc.RoutingKey);
-            }
-        }
-
-        #endregion
     }
 }

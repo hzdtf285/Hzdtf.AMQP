@@ -10,7 +10,7 @@ namespace Hzdtf.AMQP.Contract.Standard.Core
     /// 消费者接口
     /// @ 黄振东
     /// </summary>
-    public interface IConsumer : ICloseable, IDisposable
+    public interface IConsumer : ICloseable, IDisposable, ISetObject<IExceptionHandle>
     {
         /// <summary>
         /// 字节数组序列化

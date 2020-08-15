@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Hzdtf.Mini.Standard">
+      <HintPath>..\..\Library\Hzdtf.Mini.Standard.dll</HintPath>
+    </Reference>
     <Reference Include="Hzdtf.Platform.Contract.Standard">
       <HintPath>..\..\Library\Hzdtf.Platform.Contract.Standard.dll</HintPath>
     </Reference>

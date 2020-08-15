@@ -10,6 +10,7 @@ using Hzdtf.Utility.Standard.ProcessCall;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
 using System.Threading;
+using Hzdtf.Logger.Contract.Standard;
 
 namespace Hzdtf.RabbitV2.Impl.Standard.Core
 {
@@ -47,8 +48,9 @@ namespace Hzdtf.RabbitV2.Impl.Standard.Core
         /// </summary>
         /// <param name="channel">渠道</param>
         /// <param name="amqpQueue">AMQP队列信息</param>
-        public RabbitRpcClient(IModel channel, AmqpQueueInfo amqpQueue)
-            : base(channel, amqpQueue, false)
+        /// <param name="log">日志</param>
+        public RabbitRpcClient(IModel channel, AmqpQueueInfo amqpQueue, ILogable log = null)
+            : base(channel, amqpQueue, false, log)
         {
         }
 

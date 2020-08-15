@@ -198,17 +198,17 @@
             字节数组序列化，默认为JSON序列化
             </summary>
         </member>
-        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.exceptionHandleConnections">
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.exceptionHandle">
             <summary>
-            异常处理连接数组
+            异常处理
             </summary>
         </member>
-        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.dicExceptionHandleProducers">
+        <member name="P:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.ExceptionHandle">
             <summary>
-            异常处理生产者字典；key：生产者，value：路由键
+            异常处理
             </summary>
         </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo,Hzdtf.Logger.Contract.Standard.ILogable,Hzdtf.AMQP.Contract.Standard.Core.IExceptionHandle)">
             <summary>
             构造方法
             初始化各个对象以便就绪
@@ -216,6 +216,8 @@
             </summary>
             <param name="channel">渠道</param>
             <param name="amqpQueue">AMQP队列信息</param>
+            <param name="log">日志</param>
+            <param name="exceptionHandle">异常处理</param>
         </member>
         <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.Subscribe(System.Func{System.String,System.Boolean},System.Boolean)">
             <summary>
@@ -239,28 +241,15 @@
             <param name="receiveMessageFun">接收消息回调</param>
             <param name="isAutoAck">是否自动应答，如果为否，则需要在回调里返回true</param>
         </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.Set(Hzdtf.AMQP.Contract.Standard.Core.IExceptionHandle)">
+            <summary>
+            设置对象
+            </summary>
+            <param name="obj">对象</param>
+        </member>
         <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.Init">
             <summary>
             初始化
-            </summary>
-        </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.Close">
-            <summary>
-            关闭
-            </summary>
-        </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.PublishExceptionQueue(System.Exception,System.Object,System.String)">
-            <summary>
-            推送异常队列
-            </summary>
-            <param name="ex">异常</param>
-            <param name="queueMessage">队列消息</param>
-            <param name="desc">描述</param>
-            <returns>是否推送成功</returns>
-        </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitConsumer.InitExceptionHandle">
-            <summary>
-            初始化异常处理
             </summary>
         </member>
         <member name="T:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase">
@@ -284,7 +273,7 @@
             基本属性集合
             </summary>
         </member>
-        <member name="P:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.Log">
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.log">
             <summary>
             日志
             </summary>
@@ -294,7 +283,7 @@
             关闭后事件
             </summary>
         </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo,System.Boolean)">
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo,System.Boolean,Hzdtf.Logger.Contract.Standard.ILogable)">
             <summary>
             构造方法
             初始化各个对象以便就绪
@@ -303,6 +292,7 @@
             <param name="channel">渠道</param>
             <param name="amqpQueue">AMQP队列信息</param>
             <param name="isDeclare">是否定义</param>
+            <param name="log">日志</param>
         </member>
         <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitCoreBase.Close">
             <summary>
@@ -342,6 +332,66 @@
             </summary>
             <returns>日志标签集合</returns>
         </member>
+        <member name="T:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle">
+            <summary>
+            Rabbit异常处理
+            @ 黄振东
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.amqpQueue">
+            <summary>
+            AMQP队列信息
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.log">
+            <summary>
+            日志
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.exceptionHandleConnections">
+            <summary>
+            异常处理连接数组
+            </summary>
+        </member>
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.dicExceptionHandleProducers">
+            <summary>
+            异常处理生产者字典；key：生产者，value：路由键
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.#ctor(Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo,Hzdtf.Logger.Contract.Standard.ILogable)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="amqpQueue">AMQP队列信息</param>
+            <param name="log">日志</param>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.InitExceptionHandle">
+            <summary>
+            初始化异常处理
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.Handle(Hzdtf.AMQP.Model.Standard.BusinessException.BusinessExceptionInfo)">
+            <summary>
+            处理业务异常
+            </summary>
+            <param name="businessException">业务异常</param>
+            <returns>是否处理成功</returns>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.Close">
+            <summary>
+            关闭
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitExceptionHandle.Finalize">
+            <summary>
+            析构方法
+            </summary>
+        </member>
         <member name="T:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer">
             <summary>
             Rabbit生产者
@@ -353,7 +403,7 @@
             字节数组序列化，默认为JSON序列化
             </summary>
         </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo,Hzdtf.Logger.Contract.Standard.ILogable)">
             <summary>
             构造方法
             初始化各个对象以便就绪
@@ -361,6 +411,7 @@
             </summary>
             <param name="channel">渠道</param>
             <param name="amqpQueue">AMQP队列信息</param>
+            <param name="log">日志</param>
         </member>
         <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitProducer.Publish(System.String,System.String)">
             <summary>
@@ -404,7 +455,7 @@
             回调映射
             </summary>
         </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo,Hzdtf.Logger.Contract.Standard.ILogable)">
             <summary>
             构造方法
             初始化各个对象以便就绪
@@ -412,6 +463,7 @@
             </summary>
             <param name="channel">渠道</param>
             <param name="amqpQueue">AMQP队列信息</param>
+            <param name="log">日志</param>
         </member>
         <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcClient.Init">
             <summary>
@@ -450,17 +502,17 @@
             @ 黄振东
             </summary>
         </member>
-        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.exceptionHandleConnections">
+        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.exceptionHandle">
             <summary>
-            异常处理连接数组
+            异常处理
             </summary>
         </member>
-        <member name="F:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.dicExceptionHandleProducers">
+        <member name="P:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.ExceptionHandle">
             <summary>
-            异常处理生产者字典；key：生产者，value：路由键
+            异常处理
             </summary>
         </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo)">
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.#ctor(RabbitMQ.Client.IModel,Hzdtf.AMQP.Model.Standard.Config.AmqpQueueInfo,Hzdtf.Logger.Contract.Standard.ILogable,Hzdtf.AMQP.Contract.Standard.Core.IExceptionHandle)">
             <summary>
             构造方法
             初始化各个对象以便就绪
@@ -468,6 +520,8 @@
             </summary>
             <param name="channel">渠道</param>
             <param name="amqpQueue">AMQP队列信息</param>
+            <param name="log">日志</param>
+            <param name="exceptionHandle">异常处理</param>
         </member>
         <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.Receive(System.Func{System.Byte[],System.Byte[]})">
             <summary>
@@ -475,24 +529,11 @@
             </summary>
             <param name="receiveMessageFun">接收消息回调</param>
         </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.Close">
+        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.Set(Hzdtf.AMQP.Contract.Standard.Core.IExceptionHandle)">
             <summary>
-            关闭
+            设置对象
             </summary>
-        </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.PublishExceptionQueue(System.Exception,System.Object,System.String)">
-            <summary>
-            推送异常队列
-            </summary>
-            <param name="ex">异常</param>
-            <param name="queueMessage">队列消息</param>
-            <param name="desc">描述</param>
-            <returns>是否推送成功</returns>
-        </member>
-        <member name="M:Hzdtf.RabbitV2.Impl.Standard.Core.RabbitRpcServer.InitExceptionHandle">
-            <summary>
-            初始化异常处理
-            </summary>
+            <param name="obj">对象</param>
         </member>
     </members>
 </doc>

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Rabbit\Hzdtf.RabbitV2.Impl.Standard\Hzdtf.RabbitV2.Impl.Standard.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Hzdtf.Mini.Standard">
+      <HintPath>..\..\Library\Hzdtf.Mini.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="Hzdtf.Utility.Standard">
+      <HintPath>..\..\Library\Hzdtf.Utility.Standard.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="amqp.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
