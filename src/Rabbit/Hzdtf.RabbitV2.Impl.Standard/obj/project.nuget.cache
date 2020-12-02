@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yk79dHnMLqGDOI8tdbH0/ElyJsiIg1K81Z8eJ/SEPcNFnR1QYv+j0KylIKN13AmKkYAgFJ7/WHHdp1mYAxIVQw==",
+  "dgSpecHash": "vIlTNP1PRLZcSp8DvdLQmDkv0SxjErJcw0a+bFZs/6w75ZX0XsZH2MwNLi/B4TS2E9YmFseBSHJfp3xoyOHABQ==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",

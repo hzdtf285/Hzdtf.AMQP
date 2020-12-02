@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lGvjo1nzICUeopS9+31a8tV3WZMm0KnXu8YWM39Dqq9fVDUFFUUm7BpmYf8Rj67HRtjPebwYNTD1zvDhKConPQ==",
+  "dgSpecHash": "7skaMZlIXSUG/eBjXDcfwCTidYjyxYJ9JOE82hHDvjEuc9OnLIvex1gycXBhKNM1wqoCTgIfHviP/icLataA8A==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebServerExample.Core\\Hzdtf.RabbitV2.WebServerExample.Core.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebServerExample.Core\\Hzdtf.RabbitV2.WebServerExample.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\consul\\1.6.1.1\\consul.1.6.1.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

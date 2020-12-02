@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\Hzdtf.RabbitV2.WebClientExample.Core.csproj": {}
+    "D:\\MyProjects\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\Hzdtf.RabbitV2.WebClientExample.Core.csproj": {}
   },
   "projects": {
-    "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj": {
+    "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj",
         "projectName": "Hzdtf.AMQP.AspNet.Core",
-        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj",
+        "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\obj\\",
+        "outputPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -25,18 +22,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj"
               },
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj"
               }
             }
           }
@@ -70,22 +65,19 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
+    "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj",
         "projectName": "Hzdtf.AMQP.Contract.Standard",
-        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj",
+        "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\obj\\",
+        "outputPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -95,15 +87,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj"
               }
             }
           }
@@ -134,22 +124,19 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj": {
+    "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj",
         "projectName": "Hzdtf.AMQP.Impl.Standard",
-        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj",
+        "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\obj\\",
+        "outputPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -159,15 +146,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj"
               }
             }
           }
@@ -202,22 +187,19 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj": {
+    "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj",
         "projectName": "Hzdtf.AMQP.Model.Standard",
-        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj",
+        "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\obj\\",
+        "outputPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -227,9 +209,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -270,22 +250,19 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\Hzdtf.RabbitV2.WebClientExample.Core.csproj": {
+    "D:\\MyProjects\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\Hzdtf.RabbitV2.WebClientExample.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\Hzdtf.RabbitV2.WebClientExample.Core.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\Hzdtf.RabbitV2.WebClientExample.Core.csproj",
         "projectName": "Hzdtf.RabbitV2.WebClientExample.Core",
-        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\Hzdtf.RabbitV2.WebClientExample.Core.csproj",
+        "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\Hzdtf.RabbitV2.WebClientExample.Core.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\obj\\",
+        "outputPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.WebClientExample.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -295,18 +272,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj"
               },
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj"
               }
             }
           }
@@ -351,22 +326,19 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj": {
+    "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj",
         "projectName": "Hzdtf.RabbitV2.AspNet.Core",
-        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj",
+        "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\obj\\",
+        "outputPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -376,24 +348,22 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.AspNet.Core\\Hzdtf.AMQP.AspNet.Core.csproj"
               },
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj"
               },
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj"
               },
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj"
               }
             }
           }
@@ -431,22 +401,19 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj": {
+    "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj",
         "projectName": "Hzdtf.RabbitV2.Consul.AspNet.Core",
-        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj",
+        "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\Hzdtf.RabbitV2.Consul.AspNet.Core.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\obj\\",
+        "outputPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Consul.AspNet.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -456,18 +423,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Contract.Standard\\Hzdtf.AMQP.Contract.Standard.csproj"
               },
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.AspNet.Core\\Hzdtf.RabbitV2.AspNet.Core.csproj"
               }
             }
           }
@@ -498,22 +463,19 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj": {
+    "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
+        "projectUniqueName": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
         "projectName": "Hzdtf.RabbitV2.Impl.Standard",
-        "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
+        "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\obj\\",
+        "outputPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -523,15 +485,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://sdlc.apfeg.com:9487/repository/nuget-hosted/": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cnblogs.com/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj": {
-                "projectPath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj"
+              "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj": {
+                "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj"
               }
             }
           }
@@ -566,7 +526,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

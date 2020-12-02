@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tsgyvhF+ReayAxGegqix2GgQjC5yzva0+7fTzHvA0ZukyTgvgo5NHjj73wq1HnE9ofF86jq/sAsWtnyi5ugKKA==",
+  "dgSpecHash": "9VZhTzZzhZol4Bxt0UCDnXAppvUkFmEN4qhdDQgi1B4IP/93yda8qq1t2vQNto4YLLwB2vDPNdfYSMNzoa4E5w==",
   "success": true,
-  "projectFilePath": "C:\\AndyData\\MyProject\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj",
+  "projectFilePath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Model.Standard\\Hzdtf.AMQP.Model.Standard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
