@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "Q3/1RO77Ol4RzJ+IZdMP8Otqv44WNCCm0ME0N9mvyAIBCpaeVoY7OkvPj2ZQu3l+xAzOnW7zZJX7/WkWdazuVQ==",
+  "dgSpecHash": "+YvhAv+RrfAbVJb4TazFXQZG0oZFv7BSbf9cRkFCAtei073O6ywtVSwJEi+SmktBTGQClo1HtmmyY7VFjWjVeg==",
   "success": true,
-  "projectFilePath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.BusinessExceptionHandle.Core\\Hzdtf.RabbitV2.BusinessExceptionHandle.Core.csproj",
+  "projectFilePath": "F:\\MyWorks\\net2\\Hzdtf.AMQP\\src\\AspNetExample\\Hzdtf.RabbitV2.BusinessExceptionHandle.Core\\Hzdtf.RabbitV2.BusinessExceptionHandle.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\rabbitmq.client\\6.1.0\\rabbitmq.client.6.1.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.reflection.dispatchproxy\\4.7.1\\system.reflection.dispatchproxy.4.7.1.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.reflection.emit\\4.6.0\\system.reflection.emit.4.6.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.reflection.emit.lightweight\\4.6.0\\system.reflection.emit.lightweight.4.6.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512"
+    "C:\\Users\\huangzd\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\rabbitmq.client\\6.1.0\\rabbitmq.client.6.1.0.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\system.reflection.dispatchproxy\\4.7.1\\system.reflection.dispatchproxy.4.7.1.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\system.reflection.emit\\4.6.0\\system.reflection.emit.4.6.0.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\system.reflection.emit.lightweight\\4.6.0\\system.reflection.emit.lightweight.4.6.0.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
+    "C:\\Users\\huangzd\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }

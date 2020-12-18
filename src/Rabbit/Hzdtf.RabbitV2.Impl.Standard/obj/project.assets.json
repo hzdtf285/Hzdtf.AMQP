@@ -914,19 +914,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\huangzd\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
+      "projectUniqueName": "F:\\MyWorks\\net2\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
       "projectName": "Hzdtf.RabbitV2.Impl.Standard",
-      "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\obj\\",
+      "projectPath": "F:\\MyWorks\\net2\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\Hzdtf.RabbitV2.Impl.Standard.csproj",
+      "packagesPath": "C:\\Users\\huangzd\\.nuget\\packages\\",
+      "outputPath": "F:\\MyWorks\\net2\\Hzdtf.AMQP\\src\\Rabbit\\Hzdtf.RabbitV2.Impl.Standard\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\huangzd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -939,8 +943,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj": {
-              "projectPath": "D:\\MyProjects\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj"
+            "F:\\MyWorks\\net2\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj": {
+              "projectPath": "F:\\MyWorks\\net2\\Hzdtf.AMQP\\src\\AMQP\\Hzdtf.AMQP.Impl.Standard\\Hzdtf.AMQP.Impl.Standard.csproj"
             }
           }
         }
