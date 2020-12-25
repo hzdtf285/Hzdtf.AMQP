@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "roSoIQzZPM5gUo5n0ciFBiUkmPHSRq3ir2Iux/5XjvB0z3WkGUYE3Ge3cZFZhz1WsMiW5l+VJ59xixxdUhcuQA==",
+  "dgSpecHash": "1B8cBWXmtAnIkqhzeIXZyD6wzzuRwD88DTTOJgqNhq0M5o9I91VB6w+5JZAkPx3gdBoYm6C0s2adACVGFTm9RQ==",
   "success": true,
   "projectFilePath": "F:\\MyWorks\\net2\\Hzdtf.AMQP\\src\\RpcExample\\Hzdtf.RabbitV2.RpcServerExample.Core\\Hzdtf.RabbitV2.RpcServerExample.Core.csproj",
   "expectedPackageFiles": [
