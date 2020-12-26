@@ -243,7 +243,7 @@
           "dependencies": {
             "MessagePack": {
               "target": "Package",
-              "version": "[2.1.152, )"
+              "version": "[2.2.85, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -325,7 +325,7 @@
             },
             "Winton.Extensions.Configuration.Consul": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.1, )"
             }
           },
           "imports": [
@@ -545,7 +545,7 @@
             },
             "RabbitMQ.Client": {
               "target": "Package",
-              "version": "[6.1.0, )"
+              "version": "[6.2.1, )"
             }
           },
           "imports": [

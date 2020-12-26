@@ -2,11 +2,12 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "MessagePack/2.1.152": {
+      "MessagePack/2.2.85": {
         "type": "package",
         "dependencies": {
-          "MessagePack.Annotations": "2.1.152",
+          "MessagePack.Annotations": "2.2.85",
           "Microsoft.Bcl.AsyncInterfaces": "1.0.0",
+          "System.Collections.Immutable": "1.5.0",
           "System.Memory": "4.5.3",
           "System.Reflection.Emit": "4.6.0",
           "System.Reflection.Emit.Lightweight": "4.6.0",
@@ -20,7 +21,7 @@
           "lib/netcoreapp2.1/MessagePack.dll": {}
         }
       },
-      "MessagePack.Annotations/2.1.152": {
+      "MessagePack.Annotations/2.2.85": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/MessagePack.Annotations.dll": {}
@@ -77,7 +78,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "RabbitMQ.Client/6.1.0": {
+      "RabbitMQ.Client/6.2.1": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.4",
@@ -88,6 +89,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/RabbitMQ.Client.dll": {}
+        }
+      },
+      "System.Collections.Immutable/1.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -199,7 +209,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "MessagePack": "2.1.152",
+          "MessagePack": "2.2.85",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -214,7 +224,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Hzdtf.AMQP.Impl.Standard": "1.0.0",
-          "RabbitMQ.Client": "6.1.0"
+          "RabbitMQ.Client": "6.2.1"
         },
         "compile": {
           "bin/placeholder/Hzdtf.RabbitV2.Impl.Standard.dll": {}
@@ -226,10 +236,10 @@
     }
   },
   "libraries": {
-    "MessagePack/2.1.152": {
-      "sha512": "PlJ31qf42uGuJfwc61x/Pt4hJi01xh1rrBofj1MJSLzEot/2UAIRdSgxEHN/8qou5CV8OBeDM9HXKPi1Oj8rpQ==",
+    "MessagePack/2.2.85": {
+      "sha512": "3SqAgwNV5LOf+ZapHmjQMUc7WDy/1ur9CfFNjgnfMZKCB5CxkVVbyHa06fObjGTEHZI7mcDathYjkI+ncr92ZQ==",
       "type": "package",
-      "path": "messagepack/2.1.152",
+      "path": "messagepack/2.2.85",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -238,21 +248,21 @@
         "lib/netcoreapp2.1/MessagePack.xml",
         "lib/netstandard2.0/MessagePack.dll",
         "lib/netstandard2.0/MessagePack.xml",
-        "messagepack.2.1.152.nupkg.sha512",
+        "messagepack.2.2.85.nupkg.sha512",
         "messagepack.nuspec"
       ]
     },
-    "MessagePack.Annotations/2.1.152": {
-      "sha512": "RONktDA/HA641ds/2bfOqYSVew8o8EJMcQ1P4M1J77QGgbzWiWt3nBHvCAwlx0VfO6K9S8xq4b5OLD2CUnhtCg==",
+    "MessagePack.Annotations/2.2.85": {
+      "sha512": "YptRsDCQK35K5FhmZ0LojW4t8I6DpetLfK5KG8PVY2f6h7/gdyr8f4++xdSEK/xS6XX7/GPvEpqszKVPksCsiQ==",
       "type": "package",
-      "path": "messagepack.annotations/2.1.152",
+      "path": "messagepack.annotations/2.2.85",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "lib/netstandard2.0/MessagePack.Annotations.dll",
         "lib/netstandard2.0/MessagePack.Annotations.xml",
-        "messagepack.annotations.2.1.152.nupkg.sha512",
+        "messagepack.annotations.2.2.85.nupkg.sha512",
         "messagepack.annotations.nuspec"
       ]
     },
@@ -357,10 +367,10 @@
         "packageIcon.png"
       ]
     },
-    "RabbitMQ.Client/6.1.0": {
-      "sha512": "XtiIVPRpcR82AWoe64Hh9gDHqBtheFuL/88YubNKkCpNcctkWFQjMlz3zTyf2lGvZouxCXarDm0nYhGBMbt58Q==",
+    "RabbitMQ.Client/6.2.1": {
+      "sha512": "kdcin0uz1b9xQPvlLOoa8Y2zQsfu7nRuTrcX02dCLVzwGVlsPp9AFgu1L3kRh4wSFEOGE03OVqpWKxaDlhuowQ==",
       "type": "package",
-      "path": "rabbitmq.client/6.1.0",
+      "path": "rabbitmq.client/6.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -372,8 +382,31 @@
         "lib/netstandard2.0/RabbitMQ.Client.dll",
         "lib/netstandard2.0/RabbitMQ.Client.pdb",
         "lib/netstandard2.0/RabbitMQ.Client.xml",
-        "rabbitmq.client.6.1.0.nupkg.sha512",
+        "rabbitmq.client.6.2.1.nupkg.sha512",
         "rabbitmq.client.nuspec"
+      ]
+    },
+    "System.Collections.Immutable/1.5.0": {
+      "sha512": "EXKiDFsChZW0RjrZ4FYHu9aW6+P4MCgEDCklsVseRfhoO0F+dXeMSsMRAlVXIo06kGJ/zv+2w1a2uc2+kxxSaQ==",
+      "type": "package",
+      "path": "system.collections.immutable/1.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.1.5.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Memory/4.5.4": {

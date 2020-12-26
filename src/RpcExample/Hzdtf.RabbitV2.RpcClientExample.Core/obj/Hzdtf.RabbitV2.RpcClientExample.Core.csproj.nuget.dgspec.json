@@ -174,7 +174,7 @@
           "dependencies": {
             "MessagePack": {
               "target": "Package",
-              "version": "[2.1.152, )"
+              "version": "[2.2.85, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -251,7 +251,7 @@
             },
             "RabbitMQ.Client": {
               "target": "Package",
-              "version": "[6.1.0, )"
+              "version": "[6.2.1, )"
             }
           },
           "imports": [
@@ -371,7 +371,7 @@
           "dependencies": {
             "MessagePack": {
               "target": "Package",
-              "version": "[2.1.152, )"
+              "version": "[2.2.85, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
